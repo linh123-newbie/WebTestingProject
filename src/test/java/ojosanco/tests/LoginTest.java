@@ -16,7 +16,6 @@ public class LoginTest extends BaseTest{
 	String root = "root";
 	String password = "01656107662aA&";
 	String query = "select userName, password  from users;";
-//	String query1 = "select userName, password  from users;";
 	@Test(dataProvider = "getData",enabled = true)
 	public void testLoginWithValidCredentials(HashMap<String, String> input){
 		loginPage.loginApplication(input.get("userName"), input.get("password"));
